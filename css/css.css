@@ -1,0 +1,114 @@
+@charset "utf-8";
+body{
+   margin: 0;
+   font-family: "Source Sans Pro";
+   /* background-color: burlywood; */
+   /* color: white; */
+
+}
+.header{
+   background-color:crimson;
+   color:white;
+   padding: 15px;
+   text-align: center;
+   font-size: 25px;
+}
+.header h1{
+   margin: 0;
+}
+.menu-container{
+   background-color:crimson;
+}
+.menu{
+   margin: 0 auto;
+   max-width: 1024px;
+   
+   background-image: url("../image/bebedero.jpg");
+   background-position-x: center;
+   background-repeat: no-repeat;
+   height: 300px;
+   background-size: 100% 100%;
+   position: relative;
+   box-sizing: border-box;
+}
+.menu ul{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   margin: 0;
+   padding:0;
+   justify-content: center;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+.menu li{
+   border: 1px solid transparent;
+}
+.menu a{
+   background-color: rgba(214, 16, 56, 0.623);
+   border-radius:20px 20px 0 0;
+   padding: 10px 15px;
+   display: flex;
+   font-size: 25px;
+   text-decoration: none;
+   color: white;
+}
+.menu a:focus{
+}
+.menu a:hover{
+   background-color: rgba(119, 19, 39, 0.623);
+}
+.menu a:active{
+   background-color: black;
+}
+.description{
+   background-color: crimson;
+}
+h2{
+   margin: 0;
+   padding: 20px 0;
+   font-size: 30px;
+}
+.article{
+   max-width: 1024px;
+   margin: 0 auto;
+   background-color: beige;
+   padding: 0 30px;
+   box-sizing: border-box;
+}
+.article p{
+   margin: 0;
+   font-size: 20px;
+}
+
+
+.video-container{
+   background-color: crimson;
+   /* text-align: center; */
+   padding: 10px 0;
+}
+.video-marco{
+   margin: 0 auto;
+   max-width: 1024px;
+   width:100%;
+   padding-top: 50%;
+   position: relative;
+}
+.video{
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+
+
+.map-container{
+   background-color: crimson;
+   padding: 10px;
+   text-align: center;
+}
+.map{
+   max-width: 1024px;
+}
