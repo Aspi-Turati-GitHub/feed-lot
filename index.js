@@ -10,10 +10,13 @@ app.use(express.json());
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname,'src/views/index.html'));
 })
+app.get('/apagar', function (req, res) {
+  servidor.close();
+})
 app.use(express.static(path.join(__dirname,'src')));
 
 app.use((req,res,next)=>{
   res.status(404).send('no existe esta ruta');//parte para el navegador , otra parte para usuario
 });
 
-app.listen(app.get('port'))
+var servidor=app.listen(app.get('port'))
